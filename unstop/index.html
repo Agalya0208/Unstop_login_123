@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Unstop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="login-wrapper">
+    <!-- Left Illustration -->
+    <div class="illustration">
+      <img src="Illustration.png" alt="Login Illustration">
+    </div>
+
+    <!-- Right Login Form -->
+    <div class="login-container">
+      <h2>Welcome to <span class="brand">Unstop</span></h2>
+
+      <!-- Social Buttons -->
+      <button class="social-btn google">
+        <img src="google.png" alt="Google Logo"> Login with Google
+      </button>
+      <button class="social-btn facebook">
+        <img src="facebook.png" alt="Facebook LOGO"> Login with Facebook
+      </button>
+
+      <div class="divider">OR</div>
+
+      <form id="loginForm" class="form">
+        <div class="form-group">
+          <img src="account_circle.png" alt="Account">
+          <input type="text" id="username" placeholder="User name" required>
+        </div>
+        <div class="form-group">
+          <img src="mail.png" alt="mail">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <img src="key.png" alt="Password">
+          <input type="password" id="password" placeholder="Password" required>
+          <img src="visibility.png" alt="Visibility">
+        </div>
+
+        <div class="form-options">
+          <label><input type="checkbox" id="rememberMe"> Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <p id="errorMsg" class="error"></p>
+
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+
+      <p class="register">Don’t have an account? <a href="#">Register</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
